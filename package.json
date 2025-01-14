@@ -1,0 +1,15 @@
+{
+  "name": "funcfinder",
+  "version": "0.1.0",
+  "description": "Crawl Nodejs project an list functions and methods found in sources with filename and line number.",
+  "main": "funcFinder.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "espree": "^10.3.0"
+  }
+}
