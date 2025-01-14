@@ -75,7 +75,7 @@ const getJavaScriptFiles = (dir, ignoredPaths) => {
   files.forEach((file) => {
     const fullPath = join(dir, file);
 
-    // Ignore specified paths (e.g., "tests", "tiny")
+    // Ignore specified paths (e.g., "tests")
     if (ignoredPaths.some((ignored) => fullPath.includes(ignored))) {
       return;
     }
@@ -114,7 +114,7 @@ const extractFunctionsFromProject = (projectDir, ignoredPaths) => {
 // Main execution
 const main = () => {
   const projectDir = process.argv[2]; // Get project directory from CLI argument
-  const ignoredPaths = ["node_modules", "tests", "tiny"]; // Ignore these directories or paths
+  const ignoredPaths = ["node_modules", "tests"]; // Ignore these directories or paths
 
   if (!projectDir) {
     console.error(
